@@ -40104,5 +40104,46 @@
       "Empirical Study"
     ],
     "year": "2026"
+  },
+  "Revelio: Cost-Efficient Agentic Memory Safety Vulnerability Detection For Repository-Scale Codebases": {
+    "type": "article",
+    "key": "arXiv:2606.22263",
+    "author": "Hou, Yiwei and Wang, Hao and Lyu, Muxi and Momeu, Marius and Nguyen, Eric and Yang, Taige and Sen, Koushik and Song, Dawn and Wagner, David",
+    "title": "Revelio: Cost-Efficient Agentic Memory Safety Vulnerability Detection For Repository-Scale Codebases",
+    "year": "2026",
+    "venue": "arXiv2026",
+    "url": "https://arxiv.org/abs/2606.22263",
+    "doi": "10.48550/arXiv.2606.22263",
+    "abstract": "Memory safety vulnerabilities remain a significant threat even for projects with extensive fuzzing and manual auditing. Recent results suggest that large language models hold great promise for detecting such vulnerabilities, but they are unreliable, at risk of hallucination, and challenging to scale to repository-size codebases. This paper presents Revelio, a cost-efficient end-to-end agentic framework for memory-safety vulnerability discovery. Revelio addresses the problem of hallucination by generating an executable Proof-of-Vulnerability, which is checked with a deterministic sanitizer. It reduces cost using inexpensive LLMs and lightweight static analysis to help generate and rank vulnerability hypotheses, reporting vulnerabilities only when they can be reproduced and confirmed by a sanitizer. We evaluated Revelio on seven production-quality projects that had been continuously fuzzed for five to eight years, as well as on 100 randomly selected Arvo projects from the CyberGym benchmark. With around one hour per project and a total cost of $300, Revelio discovered 19 previously unknown memory-safety vulnerabilities. On benchmarks, Revelio outperformed frontier coding agents across diverse backbone models at comparable token costs. Our results suggest that Revelio enables scalable and trustworthy end-to-end LLM-based memory-safety vulnerability detection.",
+    "labels": [
+      "Static Analysis",
+      "Bug Detection",
+      "Dynamic Analysis",
+      "Fuzzing",
+      "Test Case Generation",
+      "Agent Design",
+      "Planning"
+    ]
+  },
+  "Code-Augur: Agentic Vulnerability Detection via Specification Inference": {
+    "type": "article",
+    "key": "arXiv:2606.18619",
+    "author": "Luo, Zhengxiong and Zafar, Mehtab and Wolff, Dylan and Roychoudhury, Abhik",
+    "title": "Code-Augur: Agentic Vulnerability Detection via Specification Inference",
+    "year": "2026",
+    "venue": "arXiv2026",
+    "url": "https://arxiv.org/abs/2606.18619",
+    "doi": "10.48550/arXiv.2606.18619",
+    "abstract": "The advent of agentic vulnerability detection is already becoming a watershed moment for software security. Audits conducted entirely by autonomous LLM agents are uncovering critical vulnerabilities in fundamental software underpinning digital society. Many of these vulnerabilities remained masked for years, surfacing only now with AI agents. Yet the reasoning behind these discoveries remains alarmingly opaque and unvalidated. What assumptions did the agent make about a function's inputs when it deemed that function to be secure? Failures in reasoning and incorrect assumptions can lead to missed vulnerabilities and reduce trust in agentic analysis. We propose a security-specification-first paradigm that (1) exposes the agent's tacit assumptions explicitly as security specifications and (2) continuously refines those specifications via runtime falsification. We realize our approach in Code-Augur, a novel harness for agentic vulnerability detection. Given a codebase, Code-Augur analyzes each component of the system for vulnerable code. When it deems a component to be secure, it commits the local invariants behind that judgment as in-source assertions. In parallel, Code-Augur leverages a guided fuzzer to attempt to falsify those assumptions. When the fuzzer triggers an assertion, this either reveals a genuine vulnerability or a flawed specification to refine. In both cases, this process grounds the agent's understanding, aligning its view of code intent with how the code actually behaves. On real-world subjects, Code-Augur effectively leverages security specifications to detect more vulnerabilities than other state-of-the-art agents. Additionally, Code-Augur found 22 new vulnerabilities in key open-source projects. Compared to curated specialized models like Claude Mythos, Code-Augur offers effective agentic vulnerability detection built on widely available LLMs like Sonnet and DeepSeek.",
+    "labels": [
+      "Static Analysis",
+      "Bug Detection",
+      "Specification Inference",
+      "Dynamic Analysis",
+      "Fuzzing",
+      "Test Case Generation",
+      "Agent Design",
+      "Planning"
+    ]
   }
 }
