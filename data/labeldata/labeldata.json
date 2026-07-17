@@ -40145,5 +40145,22 @@
       "Agent Design",
       "Planning"
     ]
+  },
+  "Antiproof: Synthesizing Vulnerability Detectors and Proofs of Exploitability": {
+    "type": "article",
+    "key": "arXiv:2607.12316",
+    "author": "Shakevsky, Alon and Villa, Corban and Stoica, Ion and Popa, Raluca Ada",
+    "title": "Antiproof: Synthesizing Vulnerability Detectors and Proofs of Exploitability",
+    "year": "2026",
+    "venue": "arXiv2026",
+    "url": "https://arxiv.org/abs/2607.12316",
+    "doi": "10.48550/arXiv.2607.12316",
+    "abstract": "Discovering vulnerabilities before attackers exploit them requires high recall and reliable automatic validation, but existing approaches struggle to achieve both without prohibitive cost. We present Antiproof, an end-to-end vulnerability discovery system that combines neuro-symbolic detector synthesis for high-recall discovery with proof-of-exploitability oracles for automatic validation. Antiproof learns and iteratively refines static detectors from vulnerability datasets, then validates candidates by verifying whether executable proofs demonstrate concrete attacker capabilities. Evaluated on BountyBench and our curated KEVBench dataset, Antiproof detects 64 of 66 vulnerabilities, improving recall by more than 60 percentage points over static-analysis and neuro-symbolic baselines. In a scan of 50 widely deployed systems, Antiproof uncovered several hundred previously unknown vulnerabilities. We are responsibly disclosing all confirmed zero-days and have received 12 CVE assignments to date, including remote code execution vulnerabilities in Ray, SGLang, vLLM, and LiteLLM that could allow attackers to take over LLM training and inference systems.",
+    "labels": [
+      "Static Analysis",
+      "Bug Detection",
+      "Dynamic Analysis",
+      "PoC and Exploit Generation"
+    ]
   }
 }
